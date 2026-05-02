@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F2B48">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#80DEEA"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#E0F7FA"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your full name"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Number"
+            android:textColor="#E0F7FA"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtIdNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your ID number"
+            android:inputType="number"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#E0F7FA"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textColor="#E0F7FA"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Province"
+            android:textColor="#E0F7FA"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtProvince"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your province"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="REGISTER"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:backgroundTint="#4DB6AC"/>
+
+    </LinearLayout>
+</ScrollView>
+

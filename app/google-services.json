@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "749985224704",
+    "project_id": "bursaryapp-quinn",
+    "storage_bucket": "bursaryapp-quinn.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749985224704:android:0a9795a24450cf99d2a0e5",
+        "android_client_info": {
+          "package_name": "com.example.bursaryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnawnP4voTIqVmgZSRXmYkxmqgtqj3jIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

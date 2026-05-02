@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F2B48"
+    android:orientation="vertical">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1A3A5C"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 SEARCH BURSARIES"
+            android:textColor="#80DEEA"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- SEARCH BAR -->
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Search by name or field of study..."
+        android:backgroundTint="#80DEEA"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80DEEA"
+        android:paddingStart="16dp"
+        android:layout_margin="12dp"
+        android:inputType="text"/>
+
+    <!-- RESULTS COUNT -->
+    <TextView
+        android:id="@+id/tvResultCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type to search..."
+        android:textColor="#80DEEA"
+        android:textSize="13sp"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- RESULTS LIST -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/searchResultsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"/>
+
+    </ScrollView>
+
+</LinearLayout>

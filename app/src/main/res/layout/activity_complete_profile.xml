@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F2B48">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Your Profile"
+            android:textColor="#80DEEA"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill it once, apply to many bursaries"
+            android:textColor="#E0F7FA"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- PERSONAL INFORMATION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤  PERSONAL INFORMATION"
+            android:textColor="#4DB6AC"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#1A3A5C"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gender" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtGender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Male / Female / Other"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phone Number" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your phone number"
+            android:inputType="phone"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ACADEMIC DETAILS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎓  ACADEMIC DETAILS"
+            android:textColor="#4DB6AC"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#1A3A5C"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Grade Level" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtGradeLevel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Grade 12 / 1st Year / 2nd Year etc."
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="School / Institution" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtSchool"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your school or university"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Field of Study" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtFieldOfStudy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e.g. Engineering, Medicine, Law"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Academic Average (%)" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtAverage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e.g. 75"
+            android:inputType="number"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- FINANCIAL INFORMATION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰  FINANCIAL INFORMATION"
+            android:textColor="#4DB6AC"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#1A3A5C"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Household Income (per month)" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtIncome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e.g. R8500"
+            android:inputType="number"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Number of Dependants" android:textColor="#E0F7FA" android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/edtDependants"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e.g. 4"
+            android:inputType="number"
+            android:backgroundTint="#80DEEA"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="SAVE PROFILE"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:backgroundTint="#4DB6AC"/>
+
+    </LinearLayout>
+</ScrollView>
