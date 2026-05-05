@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,63 +13,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BursaryApp">
-        <activity
-            android:name=".BursaryMatchActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SearchActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BursaryData"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".CompleteProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CompleteProfileActivity"
-            android:exported="false"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
+        <!-- Main Launcher Activity -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Alerts Activity (Exported False, no intent-filter needed) -->
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AccountCreatedActivity"
+            android:name=".AlertsActivity"
             android:exported="false" />
 
+        <!-- Applied Bursaries Activity -->
         <activity
-            android:name=".BursaryMatchActivity"
+            android:name=".AppliedBursariesActivity"
+            android:exported="false" />
+
+        <!-- Authentication Activities -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".AccountCreatedActivity" android:exported="false" />
+
+        <!-- Core App Activities -->
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".SearchActivity" android:exported="false" />
+        <activity android:name=".BursaryMatchActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".CompleteProfileActivity" android:exported="false" />
+
+        <!-- Data Class -->
+        <activity
+            android:name=".BursaryData"
             android:exported="false"
-            tools:ignore="DuplicateActivity" />
+            tools:ignore="Instantiatable" />
     </application>
 
 </manifest>
